@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   StyleSheet,
 } from 'react-native';
-import { Ionicons } from '@expo/vector-icons'; // 6.2.2
+import Icon from 'react-native-vector-icons/Ionicons';
 
 class ProgressiveInput extends Component {
   static propTypes = {
@@ -108,7 +108,7 @@ class ProgressiveInput extends Component {
     if (this.state.showClearButton) {
       return (
         <TouchableOpacity onPress={() => this.clearInput()}>
-          <Ionicons
+          <Icon
             name={this.props.clearButtonIcon}
             size={this.props.clearButtonSize}
             style={[styles.clearIcon, this.props.clearButtonStyle]}
